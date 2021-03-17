@@ -39,3 +39,5 @@ source limit for the server
 
 - bind_address
 Icecast bind address
+
+![image](https://github.com/ahmetozer/icecast-container/raw/docs/exampleStream.jpg)
