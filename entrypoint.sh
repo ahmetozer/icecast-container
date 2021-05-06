@@ -89,10 +89,10 @@ cat <<EOF > /etc/icecast.xml
     <fileserve>1</fileserve>
 
     <paths>
-        <basedir>/usr/share/icecast</basedir>
-        <logdir>/var/log/icecast</logdir>
-        <webroot>/usr/share/icecast/web</webroot>
-        <adminroot>/usr/share/icecast/admin</adminroot>
+        <basedir>/usr/share/icecast/</basedir>
+        <logdir>log</logdir>
+        <webroot>web</webroot>
+        <adminroot>admin</adminroot>
         <alias source="/" destination="/status.xsl"/>
     </paths>
 
@@ -104,7 +104,7 @@ cat <<EOF > /etc/icecast.xml
     </logging>
 
     <security>
-        <chroot>0</chroot>
+        <chroot>1</chroot>
         <changeowner>
             <user>icecast</user>
             <group>icecast</group>
