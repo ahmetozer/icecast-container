@@ -5,7 +5,7 @@ Serve your radio in container.
 ## Example Run
 
 ```bash
-root@a789a794-sv/container/icecast>docker run -it --rm -e authentication_source_password=sourcepw -p 8000:8000 ghcr.io/ahmetozer/icecast
+root@a789a794-sv/container/icecast>docker run -it --rm -e authentication_source_password=sourcepw -p 8000:8000 ghcr.io/ahmetozer/icecast-container
         Admin username is 'admin' and password is:   FGOt3cRGjrgLUc4F
         authentication_source_password password is specified by user:             so...pw
         authentication_relay_password password is:    qBBa5KFEKgDGJRfQ

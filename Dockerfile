@@ -1,6 +1,9 @@
 FROM alpine
 
-RUN apk add icecast bash
+RUN apk add --no-cache icecast bash libcap && \
+setcap CAP_NET_BIND_SERVICE=+eip /usr/bin/icecast && \
+apk del  --no-cache libcap
+
 WORKDIR /usr/share/icecast/
 COPY . .
 RUN mkdir -p /usr/share/icecast/log && \
